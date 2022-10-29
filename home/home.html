@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do Van Trong</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link type="text/css" href="/node_modules/bare-bones-slider/css/jquery.bbslider.css" rel="stylesheet" />
+   
+
+</head>
+<body>
+    <div class="relative w3-sidebar w3-bar-block " style="display:none" id="mySidebar">
+        <div class="bg-color mgt-30 hight-max menu-mini">
+            <div class="d-flex mgl-10px ">
+                <img class="mgt-20p" src="/img/logo.png" alt="">
+                <button onclick="w3_close()" class="bt-close">X</button>
+            </div>
+            <div class="icon-item d-flex mgt-30px">
+                <i class="bi bi-heart-fill"></i>
+                <i class="bi bi-bag-check-fill"></i>
+                <div class="item">item:$150</div>
+            </div>
+            <div class="d-flex mglt-10px language-size language mgt-30px">
+                <div class="d-flex">
+                    <div>Language: English</div>
+                    
+                </select>
+                </div>
+                <div class="login d-flex mgl-20px">
+                    <i class="bi bi-person-fill"></i>
+                    <div>login</div>
+                </div>
+            </div>
+            <div class="mgt-30px az">
+                <a href="/home/home.html" class="w3-bar-item ">Home</a>
+                <a href="#" class="w3-bar-item ">Shop</a>
+                <a href="#" class="w3-bar-item ">Page</a>
+                <a href="#" class="w3-bar-item ">Blog</a>
+                <a href="#" class="w3-bar-item ">Contact</a>
+            </div>
+
+            <div class="mgt-30px contact d-flex">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+                
+            </div>
+            <div class="mgt-30px mail d-flex">
+                <i class="bi bi-envelope-fill"></i>
+                <div class="my-email">Dvtcntt5k13@gmail.com</div>
+            </div>
+            <div class="mgt-40px mail">
+                Free ship for Techmaster's student
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-color ">
+        <div class="container d-flex relative">
+            <div class=" about-me list-menu-head ">
+                <div class="mail d-flex ">
+                    <i class="bi bi-envelope-fill"></i>
+                    <div class="my-email">Dvtcntt5k13@gmail.com</div>
+                    <div class="mail ship">
+                        Free ship for Techmaster's student
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex absolute r-0 ">
+                <div class=" headers d-flex align-center contact d-flex">
+                    <i class="azx bi bi-facebook"></i>
+                    <i class="azx bi bi-twitter"></i>
+                    <i class="azx bi bi-linkedin"></i>
+                    
+                </div>
+                <div class=" d-flex mglt-10px language-size language">
+                    <div class="d-flex align-center">
+                        <div class="azx ">Language:
+                            <select name="" id="">
+                                <option value="">English</option>
+                                <option value="">Vietnamese</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="login d-flex align-center">
+                        <i class="azx bi bi-person-fill"></i>
+                        <div class="azx">login</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <head class="header">
+        <div class="container">
+            <div class="col-12 col-lg-12 col-xl-12 ">
+                <div class="row d-flex align-center">
+                    <div class="col-4  col-lg-4 col-xl-4 d-flex " >
+                        <img class="" src="/img/logo.png" alt="">
+                    </div>
+                    
+                        
+                    
+                    <div class="azx col-6 col-lg-6 col-xl-8 ">
+                        <div class="col-xl-9 d-flex pr">
+                            <a href="/home/home.html" class="col-xl-2">Home</a>
+                            <a href="/shop/shop.html" class="col-xl-2">Shop</a>
+                            <div class="col-xl-2 header_menu relative ">Page
+                                <ul class="header_menu_dropdown abon">
+                                    <li><a href="/shop/shop.html">Shop Details</a></li>
+                                    <li><a href="/shop-cart/shop-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="/blog/blog.html">Blog Details</a></li>
+                                </ul>
+                            </div>
+                            <a  href="../blog/blog.html" class="col-xl-2">Blog</a>
+                            <div class="col-xl-2">Contact</div>
+                        </div>
+                        <div class="col-xl-3">
+                            
+                        </div>
+                    </div>
+                    <button onclick="w3_open()" class="list-menu col-2 text-center mgt-20p col-lg-1 col-xl-1" ><i class="bi bi-list"></i></button>
+                    
+                </div>
+            </div>
+        </div>
+    </head>
+    <section>
+        <div class="container">
+            <div class=" dropdown row ">
+                <div class="col-12 col-xl-3">
+                    <button onclick="myFunction()" class="dropbtn col-12 col-xl-12 mgbt">All Department
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content col-12 col-xl-3">
+                      <a href="#">Fresh Meat</a>
+                      <a href="#">Vegetable</a>
+                      <a href="#">Fresh Meat</a>
+                      <a href="#">Fresh Meat</a>
+                      <a href="#">Vegetable</a>
+                      <a href="#">Fresh Meat</a>
+                      <a href="#">Fresh Meat</a>
+                      <a href="#">Vegetable</a>
+                      <a href="#">Fresh Meat</a>
+                    </div>
+                </div>
+                <div class="col-xl-1"></div>
+                <div class="seach-item col-12 col-xl-6 d-flex mgbt">
+                    <input class="col-8" type="text" placeholder="What do you need?">
+                    <button type="submit" class=" site-btn col-4">SEARCH</button>
+                </div>
+
+
+
+                
+                
+                <div class="col-12 col-xl-2 d-flex align-center">
+                    <div><i class="bi bi-phone call-item"></i></div>
+                    <div class="call-me-now mgl-20p">
+                        <h5>0949214082</h5>
+                        <span>support 24/24</span>
+                    </div>
+                </div>
+            </div>
+              <div class="azx">
+                <img  class="hero_item t-200" src="/img/hero/banner.jpg" alt="">
+                <div  class="hero_text">
+                    <span>FRUIT FRESH</span>
+                    <h2>Vegetable <br />100% Organic</h2>
+                    <p>Free Pickup and Delivery Available</p>
+                    <a href="#" class="primary-btn">SHOP NOW</a>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section class="categories mgt-20p container">
+        <div class="row">
+                <div class="col-12 col-xl-3">
+                    <div class="text-center" id="auto">
+                        <div><img src="/img/categories/cat-1.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-2.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-3.jpg" alt="" /></div>
+                    </div>
+                    <div class="vegetable">vegetable</div>
+                </div>
+                <div class=" col-xl-3">
+                    <div class="text-center" id="autoa">
+                        <div><img src="/img/categories/cat-2.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-1.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-3.jpg" alt="" /></div>
+                    </div>
+                    <div class="vegetable">Drink Fruit</div>
+                </div>
+                <div class=" col-xl-3">
+                    <div class="text-center" id="autob">
+                        <div><img src="/img/categories/cat-3.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-1.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-2.jpg" alt="" /></div>
+                    </div>
+                    <div class="vegetable">Meat</div>
+                </div>
+                <div class=" col-xl-3">
+                    <div class="text-center" id="autoc">
+                        <div><img src="/img/categories/cat-2.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-3.jpg" alt="" /></div>
+                        <div><img src="/img/categories/cat-1.jpg" alt="" /></div>
+                    </div>
+                    <div class="vegetable">Drink fruit</div>
+                </div>
+        </div>
+    </section>
+    
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Featured Product</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".oranges">Oranges</li>
+                            <li data-filter=".fresh-meat">Fresh Meat</li>
+                            <li data-filter=".vegetables">Vegetables</li>
+                            <li data-filter=".fastfood">Fastfood</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="vegetabless" class="row featured__filter">
+
+                
+            </div>
+        </div>
+    </section>
+    
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="/img/banner/banner-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="/img/banner/banner-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>From The Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="/img/blog/blog-1.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="bi bi-calendar3-week"></i> May 4,2019</li>
+                                <li><i class="bi bi-messenger"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="/img/blog/blog-2.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="bi bi-calendar3-week"></i> May 4,2019</li>
+                                <li><i class="bi bi-messenger"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="/img/blog/blog-3.jpg" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="bi bi-calendar3-week"></i> May 4,2019</li>
+                                <li><i class="bi bi-messenger"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Visit the clean farm in the US</a></h5>
+                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        
+                        <ul>
+                            <li><div class="footer__about__logo">
+                                <a href=""><img src="/img/logo.png" alt=""></a>
+                            </div></li>
+                            <li>Address: Thành Lợi Vụ Bản Nam Định</li>
+                            <li>Phone: 0949214082</li>
+                            <li>Email: dvtcntt5k13@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                       
+                        <ul>
+                            <li> <h6>Useful Links</h6></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   <script src="home.js"></script>
+   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+   <script type="text/javascript" src="/node_modules/bare-bones-slider/js/jquery-3.2.1.min.js"></script>
+   <!-- <script type="text/javascript" src="/node_modules/jquery/js/jquery.bbslider.min.js"></script> -->
+   <script type="text/javascript" src="/node_modules/bare-bones-slider/js/jquery.bbslider.js"></script>
+   <!-- <script type='text/javascript' src="js/jquery.mycart.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="/productn.js"></script>
+    <script src="js/main.js"></script>
+   <script type="text/javascript">
+        $(document).ready(function () {
+        $('#auto').bbslider({auto: true, timer: 3000, loop: true, pauseOnHit: false});
+        $('#autoa').bbslider({auto: true, timer: 3000, loop: true, pauseOnHit: false});
+        $('#autob').bbslider({auto: true, timer: 3000, loop: true, pauseOnHit: false});
+        $('#autoc').bbslider({auto: true, timer: 3000, loop: true, pauseOnHit: false});
+    });
+   </script>
+    <script type="text/javascript">
+        $(function () {
+      
+          var goToCartIcon = function($addTocartBtn){
+            var $cartIcon = $(".my-cart-icon");
+            var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+            $addTocartBtn.prepend($image);
+            var position = $cartIcon.position();
+            $image.animate({
+              top: position.top,
+              left: position.left
+            }, 500 , "linear", function() {
+              $image.remove();
+            });
+          }
+      
+          $("#addNewProduct").click(function(event) {
+            var currentElementNo = $(".row").children().length + 1;
+            $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+          });
+        });
+        </script>
+        
+</body>
+</html>

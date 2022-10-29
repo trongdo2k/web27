@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bare-bones-slider": "^1.3.3"
+  },
+  "name": "trong",
+  "description": "\"# web\"",
+  "version": "1.0.0",
+  "main": "product.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "trong"
+  },
+  "author": "trong",
+  "license": "ISC"
+}
